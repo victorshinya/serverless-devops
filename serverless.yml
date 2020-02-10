@@ -18,7 +18,7 @@ packages:
         version: 1.0
         license: Apache-2.0
         actions:
-            helloWorld:
+            currentTime:
                 function: handler.js
                 web-export: false
 

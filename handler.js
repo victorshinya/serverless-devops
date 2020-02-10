@@ -20,11 +20,12 @@
  * @returns {Object} Returns a Hello message
  */
 
-function main(params) {
-    if (params && params.name) {
-        return { message: `Hello ${params.name}` }
-    } else {
-        return { message: 'Hello World' }
+function main() {
+    return {
+        statusCode: 200,
+        body: {
+            message: `Hello adventurer, the current time is ${new Date().toTimeString()}.`
+        }
     }
 }
 
