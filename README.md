@@ -1,6 +1,13 @@
 # Serverless DevOps
 
-Setup a Continuous Integration and Continuous Delivery (CI/CD) for your Function using IBM Cloud Continuous Delivery.
+[![IBM Cloud Powered](https://img.shields.io/badge/IBM%20Cloud-powered-blue.svg)](https://cloud.ibm.com)
+[![Platform](https://img.shields.io/badge/platform-nodejs-lightgrey.svg?style=flat)](https://developer.ibm.com/technologies/node-js/)
+[![LICENSE](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/victorshinya/serverless-devops/blob/master/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/victorshinya/serverless-devops/pulls)
+
+Automate your deployments using a CI/CD platform. It can help you increase your throughput and reduce the release cycles. See https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-deploy for more details.
+
+The [deploy script](deploy_script.sh) is supported by IBM Cloud Continuous Delivery on Cloud Foundry deployer type.
 
 ![Architecture Design](doc/source/images/architecture.jpeg)
 
