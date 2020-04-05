@@ -9,16 +9,29 @@ Automate your deployments using a CI/CD platform. It can help you increase your 
 
 The [deploy script](deploy_script.sh) is supported by IBM Cloud Continuous Delivery on Cloud Foundry deployer type.
 
-![Architecture Design](doc/source/images/architecture.jpeg)
+![Architecture Design](doc/source/images/architecture.jpg)
 
 ## Components and technologies
 
 * [IBM Cloud Functions](https://cloud.ibm.com/functions): IBM Cloud Functions is a Function-as-a-Service (FaaS) platform which executes functions in response to incoming events.
 * [IBM Cloud Continuous Delivery](https://cloud.ibm.com/catalog/services/continuous-delivery): Use Continuous Delivery to automate builds, unit tests, deployments, and more. Edit and push code using Git Repos and Issue Tracking and the rich web based IDE. Create toolchains to enable tool integrations that support your development, deployment, and operation tasks.
 
-## Deploy on IBM Cloud
+## Deployment
 
-If you're already logged in your IBM Cloud account on IBM Cloud CLI (if you don't, run `ibmcloud login`), run the following command:
+To deploy, you need to install [IBM Cloud CLI](https://cloud.ibm.com/docs/cli/reference/ibmcloud/download_cli.html#install_use) and [IBM Cloud Functions CLI](https://cloud.ibm.com/openwhisk/learn/cli) in your local machine. After this step, you need to login in your IBM Cloud account on IBM Cloud CLI (if you haven't already done, run `ibmcloud login`), follow all steps below.
+
+### 1. Clone this repository
+
+```sh
+git clone https://github.com/victorshinya/serverless-devops.git
+cd serverless-devops
+```
+
+### 3. Deploy the function
+
+Run the following command to deploy both `handler.js` function. It requires an account on [IBM Cloud](https://cloud.ibm.com).
+
+> As you are using IBM Cloud Functions, you don't need to install any package or setup a `package.json`. The platform already has the package installed.
 
 ```sh
 ibmcloud fn deploy --manifest serverless.yml
